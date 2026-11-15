@@ -70,3 +70,15 @@
     animation-duration: 0.01ms !important;
   }
 }
+
+@utility border-rule {
+  border-width: var(--rule);
+  border-style: solid;
+  border-color: var(--color-ink);
+}
+
+@utility border-rule-* {
+  border-width: calc(--value(integer) * 1px);
+  border-style: solid;
+  border-color: var(--color-ink);
+}
